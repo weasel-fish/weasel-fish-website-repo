@@ -1,4 +1,19 @@
-const h2 = document.createElement('h2');
-h2.textContent = "This content added by JavaScript";
 
-document.querySelector('body').appendChild(h2);
+function createCollapsibles() {
+
+    const collapsible = document.getElementsByClassName('collapsible');
+
+    for(let i = 0; i < collapsible.length; i++) {
+        collapsible[i].addEventListener('click', function() {
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            if(content.style.maxHeight) {
+               content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    }
+}
+
+createCollapsibles();

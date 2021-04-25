@@ -59,5 +59,25 @@ body {
 
 #navLinkList ul li {
   color: white;
-  font-size: 1.5em;
+  font-size: 25px;
+}
+
+#aboutMe {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.collapsible {
+  cursor: pointer;
+  font-size: 30px;
+  background-color: white;
+  border: none;
+}
+
+.colContent {
+  margin: 0 auto;
+  max-height: 0;
+  max-width: 400px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
