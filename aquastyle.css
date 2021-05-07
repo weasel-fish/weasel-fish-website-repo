@@ -1,53 +1,123 @@
+p {
+    text-align: center;
+}
+
 #tank {
-    background-color: aqua;
+    background: url(./pics/aquarium-background.png);
+    background-size: 750px 500px;
     height: 500px;
     width: 750px;
     position: relative;
+    margin: auto;
 }
 
-@keyframes fish1move {
-    0% {left: 140px}
-    25% {bottom: 60px}
-    50% {left: 250px}
-    75% {bottom: 20px}
-    100% {left: 140px}
+@keyframes plecoMove {
+    0% {}
+    50% {bottom: 180px}
+    100% {}
 }
 
-@keyframes fish2move {
+@keyframes loachMove {
+    0% {transform: scaleX(1)}
+    25% {left: 500px}
+    50% {transform: scaleX(-1)}
+    75% {left: 10px}
+}
+
+@keyframes pandaMove {
+    0% {transform: scaleX(-1) rotate(55deg)}
+    25% {left: 375px; bottom: 350px}
+    50% {left: 500px; bottom: 50px; transform: scaleX(-1) rotate(-10deg)}
+    55% {transform: rotate(55deg)}
+    75% {left: 375px; bottom: 350px}
+    80% {transform: rotate(-35deg)}
+    100% {bottom: 50px; left: 250px}
 
 }
 
-@keyframes fish3move {
-
+@keyframes tetraMove {
+    0% {}
+    10% {bottom: 300px}
+    20% {bottom: 280px}
+    30% {bottom: 300px}
+    40% {bottom: 280px}
 }
 
-#fish1 {
-    width: 20px;
-    height: 50px;
-    background-color: brown;
+@keyframes angelMove {
+    0% {}
+    12% {bottom: 300px}
+    38% {bottom: 260px}
+    50% {bottom: 280px; transform: scaleX(-1)}
+    62% {bottom: 300px}
+    88% {bottom: 260px}
+}
+
+@keyframes shrimpMove {
+    0% {}
+    50% {transform: rotate(50deg)}
+}
+
+#pleco {
+    height: 100px;
+    width: auto;
     position: absolute;
-    bottom: 40px;
-    left: 140px;
-    animation-name: fish1move;
+    transform: rotate(-90deg);
+    right: -92px;
+    bottom: 90px;
+    animation-name: plecoMove;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
-#fish2 {
-    width: 20px;
-    height: 50px;
-    background-color: green;
+#loach {
     position: absolute;
-    top: 70px;
-    left: 300px;
+    height: 50px;
+    width: auto;
+    left: 10px;
+    bottom: 15px;
+    animation-name: loachMove;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
-#fish3 {
-    width: 20px;
-    height: 50px;
-    background-color: red;
+#panda {
     position: absolute;
-    right: 350px;
-    bottom: 140px;
+    height: 60px;
+    transform: scaleX(-1) rotate(55deg);
+    bottom: 50px;
+    left: 250px;
+    animation-name: pandaMove;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
+#tetra {
+    position: absolute;
+    height: 35px;
+    bottom: 280px;
+    left: 190px;
+    animation-name: tetraMove;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#angel {
+    position: absolute;
+    height: 200px;
+    bottom: 280px;
+    left: 455px;
+    animation-name: angelMove;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+#shrimp {
+    position: absolute;
+    height: 50px;
+    bottom: 220px;
+    left: 70px;
+    transform: rotate(25deg);
+    animation-name: shrimpMove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
