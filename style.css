@@ -1,5 +1,22 @@
 body {
     background: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 30px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .section {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
 #outer {
@@ -28,6 +45,8 @@ body {
 #inner h1 {
     color: white;
     align-self: center;
+    font-variant: small-caps;
+    font-weight: 50;
   }
 
 #namePlateCont {
@@ -66,6 +85,13 @@ body {
   margin-top: 50px;
   text-align: center;
 }
+#navLinkList ul li a:visited {
+  color: white;
+}
+
+button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 .collapsible {
   cursor: pointer;
@@ -80,4 +106,9 @@ body {
   max-width: 400px;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+}
+
+#footer {
+  display: grid;
+  text-align: center;
 }
